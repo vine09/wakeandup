@@ -1,0 +1,640 @@
+--产品标识:100
+--Date and Time:2019-3-2011:16
+--Tester:---Ver1.2.0.69
+
+--测试时间长度:501
+--测试结果:
+Pass
+[测试名称]               	[TestItem]    	[帧ID]            	[数据内容]        	[下限值]        	[上限值]        	[单位]	[间隔时间]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]    	                                                   																																																																																																																						
+程控电源电压设置         	CMD_Pow       	CH1               	12                	                	                	      	1         	                	Done  	0.430000  	0     	上电          	电源电压递增配置有两个参数：1、启用或禁用;2、递增值																																																																																																																						
+打开电源                 	DOAction      	B+                	1                 	                	                	      	1         	                	Done  	0.240000  	0     	上电          	                                                   																																																																																																																						
+ACC置高                  	DOAction      	ACC               	1                 	                	                	      	1         	                	Done  	0.240000  	0     	上电          	                                                   																																																																																																																						
+延时                     	Delay         	                  	35                	                	                	      	1         	                	Done  	35.010000 	0     	              	                                                   																																																																																																																						
+启动自动化测试进程       	StartProcess  	100               	5;100             	PASS            	PASS            	String	1         	PASS            	PASS  	4.796000  	1     	通信          	                                                   																																																																																																																						
+启动自动化测试           	CMD_CAJH      	启动自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.773000  	1     	通信          	                                                   																																																																																																																						
+延时                     	Delay         	                  	5                 	                	                	      	1         	                	Done  	5.012000  	0     	              	                                                   																																																																																																																						
+查询软件版本             	CMD_CAJH      	查询4G固件版本    	4000              	LLA5201.1.1_M006	LLA5201.1.1_M006	      	1         	LLA5201.1.1_M006	PASS  	0.873000  	0     	生产信息      	                                                   																																																																																																																						
+测试工作电流             	Static Current	GDM_8341          	1000              	100             	500             	      	1         	185.20000       	PASS  	0.694000  	0     	休眠或工作电流	                                                   																																																																																																																						
+退出自动化测试           	CMD_CAJH      	退出自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.274000  	0     	              	                                                   																																																																																																																						
+退出自动化测试进程       	QuitProcess   	退出自动化测试进程	100               	PASS            	PASS            	      	1         	PASS            	PASS  	0.375000  	0     	              	                                                   																																																																																																																						
+ACC置低                  	DOAction      	ACC               	0                 	                	                	      	1         	                	Done  	0.241000  	0     	              	                                                   																																																																																																																						
+延时                     	Delay         	                  	90                	                	                	      	1         	                	Done  	90.011000 	0     	              	                                                   																																																																																																																						
+测试休眠电流             	Static Current	GDM_8341          	1000              	0.001           	15              	      	1         	14.20000        	PASS  	3.025000  	0     	休眠或工作电流	                                                   																																																																																																																						
+ACC置高                  	DOAction      	ACC               	1                 	                	                	      	1         	                	Done  	0.240000  	0     	              	                                                   																																																																																																																						
+延时                     	Delay         	                  	2                 	                	                	      	1         	                	Done  	2.011000  	0     	              	                                                   																																																																																																																						
+启动自动化测试进程       	StartProcess  	100               	5;100             	PASS            	PASS            	String	1         	PASS            	PASS  	3.719000  	1     	通信          	                                                   																																																																																																																						
+启动自动化测试           	CMD_CAJH      	启动自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.370000  	1     	通信          	                                                   																																																																																																																						
+测试工作电流             	Static Current	GDM_8341          	1000              	100             	500             	      	1         	190.30000       	PASS  	0.618000  	0     	休眠或工作电流	                                                   																																																																																																																						
+延时                     	Delay         	                  	12                	                	                	      	1         	                	Done  	12.011000 	0     	              	                                                   																																																																																																																						
+写入WIFI名称             	CMD_CAJH      	写入WIFI名称      	5000              	                	01              	      	1         	                	PASS  	1.174000  	0     	              	                                                   																																																																																																																						
+写入WIFI密码             	CMD_CAJH      	写入WIFI密码      	4000              	                	01              	      	1         	                	PASS  	1.172000  	0     	              	                                                   																																																																																																																						
+WIFI连接网络测试         	WIFI_DOS      	2;10;1            	1;5               	PASS            	PASS            	String	1         	PASS            	PASS  	43.833000 	0     	WIFI连接      	                                                   																																																																																																																						
+退出自动化测试           	CMD_CAJH      	退出自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.275000  	0     	              	                                                   																																																																																																																						
+退出自动化测试进程       	QuitProcess   	退出自动化测试进程	100               	PASS            	PASS            	      	1         	PASS            	PASS  	0.373000  	0     	              	                                                   																																																																																																																						
+ACC置低                  	DOAction      	ACC               	0                 	                	                	      	1         	                	Done  	0.240000  	0     	上电          	                                                   																																																																																																																						
+延时                     	Delay         	                  	15                	                	                	      	1         	                	Done  	15.012000 	0     	              	                                                   																																																																																																																						
+数据帧ID唤醒*测试工作电流	CAN_Current   	GDM_8341;120      	5;0011223344556677	100             	500             	String	1         	125.00000       	PASS  	5.663000  	0     	CAN唤醒       	                                                   																																																																																																																						
+管理帧ID唤醒*测试工作电流	CAN_Current   	GDM_8341;400      	5;0D02223344556677	100             	500             	String	1         	154.10000       	PASS  	13.066000 	0     	CAN唤醒       	                                                   																																																																																																																						
+关闭电源                 	DOAction      	B+                	0                 	                	                	      	1         	                	Done  	0.241000  	0     	上电          	                                                   																																																																																																																						
+程控电源电压设置         	CMD_Pow       	CH1               	0                 	                	                	      	1         	                	Done  	0.421000  	0     	上电          	电源电压递增配置有两个参数：1、启用或禁用;2、递增值																																																																																																																						
+程控电源电压设置         	CMD_Pow       	CH1               	12                	                	                	      	1         	                	Done  	0.424000  	0     	上电          	电源电压递增配置有两个参数：1、启用或禁用;2、递增值																																																																																																																						
+打开电源                 	DOAction      	B+                	1                 	                	                	      	1         	                	Done  	0.234000  	0     	上电          	                                                   																																																																																																																						
+ACC置高                  	DOAction      	ACC               	1                 	                	                	      	1         	                	Done  	0.235000  	0     	上电          	                                                   																																																																																																																						
+延时                     	Delay         	                  	35                	                	                	      	1         	                	Done  	35.006000 	0     	              	                                                   																																																																																																																						
+启动自动化测试进程       	StartProcess  	100               	5;100             	PASS            	PASS            	String	1         	PASS            	PASS  	3.725000  	1     	通信          	                                                   																																																																																																																						
+启动自动化测试           	CMD_CAJH      	启动自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.271000  	1     	通信          	                                                   																																																																																																																						
+延时                     	Delay         	                  	5                 	                	                	      	1         	                	Done  	5.008000  	0     	              	                                                   																																																																																																																						
+查询软件版本             	CMD_CAJH      	查询4G固件版本    	4000              	LLA5201.1.1_M006	LLA5201.1.1_M006	      	1         	LLA5201.1.1_M006	PASS  	0.276000  	0     	生产信息      	                                                   																																																																																																																						
+测试工作电流             	Static Current	GDM_8341          	1000              	100             	500             	      	1         	179.50000       	PASS  	0.694000  	0     	休眠或工作电流	                                                   																																																																																																																						
+退出自动化测试           	CMD_CAJH      	退出自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.279000  	0     	              	                                                   																																																																																																																						
+退出自动化测试进程       	QuitProcess   	退出自动化测试进程	100               	PASS            	PASS            	      	1         	PASS            	PASS  	0.371000  	0     	              	                                                   																																																																																																																						
+ACC置低                  	DOAction      	ACC               	0                 	                	                	      	1         	                	Done  	0.239000  	0     	              	                                                   																																																																																																																						
+延时                     	Delay         	                  	90                	                	                	      	1         	                	Done  	90.010000 	0     	              	                                                   																																																																																																																						
+测试休眠电流             	Static Current	GDM_8341          	1000              	0.001           	15              	      	1         	7.30000         	PASS  	0.695000  	0     	休眠或工作电流	                                                   																																																																																																																						
+ACC置高                  	DOAction      	ACC               	1                 	                	                	      	1         	                	Done  	0.240000  	0     	              	                                                   																																																																																																																						
+延时                     	Delay         	                  	2                 	                	                	      	1         	                	Done  	2.009000  	0     	              	                                                   																																																																																																																						
+启动自动化测试进程       	StartProcess  	100               	5;100             	PASS            	PASS            	String	1         	PASS            	PASS  	3.719000  	1     	通信          	                                                   																																																																																																																						
+启动自动化测试           	CMD_CAJH      	启动自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.266000  	1     	通信          	                                                   																																																																																																																						
+测试工作电流             	Static Current	GDM_8341          	1000              	100             	500             	      	1         	190.70000       	PASS  	0.617000  	0     	休眠或工作电流	                                                   																																																																																																																						
+延时                     	Delay         	                  	12                	                	                	      	1         	                	Done  	12.010000 	0     	              	                                                   																																																																																																																						
+写入WIFI名称             	CMD_CAJH      	写入WIFI名称      	5000              	                	01              	      	1         	                	PASS  	1.173000  	0     	              	                                                   																																																																																																																						
+写入WIFI密码             	CMD_CAJH      	写入WIFI密码      	4000              	                	01              	      	1         	                	PASS  	1.174000  	0     	              	                                                   																																																																																																																						
+WIFI连接网络测试         	WIFI_DOS      	2;10;1            	1;5               	PASS            	PASS            	String	1         	PASS            	PASS  	68.022000 	0     	WIFI连接      	                                                   																																																																																																																						
+退出自动化测试           	CMD_CAJH      	退出自动化测试    	4000              	01              	01              	      	1         	01              	PASS  	0.276000  	0     	              	                                                   																																																																																																																						
+退出自动化测试进程       	QuitProcess   	退出自动化测试进程	100               	PASS            	PASS            	      	1         	PASS            	PASS  	0.375000  	0     	              	                                                   																																																																																																																						
+ACC置低                  	DOAction      	ACC               	0                 	                	                	      	1         	                	Done  	0.240000  	0     	上电          	                                                   																																																																																																																						
+延时                     	Delay         	                  	15                	                	                	      	1         	                	Done  	15.009000 	0     	              	                                                   																																																																																																																						
+数据帧ID唤醒*测试工作电流	CAN_Current   	GDM_8341;120      	5;0011223344556677	100             	500             	String	1         	153.40000       	PASS  	5.663000  	0     	CAN唤醒       	                                                   																																																																																																																						
+管理帧ID唤醒*测试工作电流	CAN_Current   	GDM_8341;400      	5;0D02223344556677	100             	500             	String	1         	112.50000       	PASS  	6.750000  	0     	CAN唤醒       	                                                   																																																																																																																						
+关闭电源                 	DOAction      	B+                	0                 	                	                	      	1         	                	Done  	0.240000  	0     	上电          	                                                   																																																																																																																						
+程控电源电压设置         	CMD_Pow       	CH1               	0                 	                	                	      	1         	                	Done  	0.423000  	0     	上电          	电源电压递增配置有两个参数：1、启用或禁用;2、递增值																																																																																																																						
+
+通信信息:程控电源设置输出：***通道CH1设置：12V***
+耗时：0.200s
+B+：置高输出
+ACC：置高输出
+延时:35秒
+启动自动化测试进程：PASS
+COM35: 退出进程
+反馈：killall
+
+COM35
+退出系统：
+反馈：
+
+msm 201901112322 mdm9607 /dev/ttyGS0
+
+
+
+mdm9607 login: 
+COM35
+输入用户名：root
+反馈：root
+Password: 
+COM35
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM35
+启动进程：
+反馈：/vendor/app/auto_test_main
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：7.620000E-1s
+读循环次数：6
+延时:5秒
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01LLA5201.1.1_M006
+
+本次串口通信耗时：8.630000E-1s
+读循环次数：7
+静态电流值：185.200000
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:8002$ValType:01$Value:01
+
+本次串口通信耗时：2.630000E-1s
+读循环次数：1
+退出自动测试进程:成功！
+ACC：置低输出
+延时:90秒
+静态电流值：14.200000
+ACC：置高输出
+延时:2秒
+启动自动化测试进程：PASS
+COM35: 退出进程
+反馈：killall
+Password: 
+COM35
+退出系统：
+反馈：
+
+COM35
+输入用户名：root
+反馈：root
+
+COM35
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM35
+启动进程：
+反馈：/vendor/app/auto_test_main
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：3.600000E-1s
+读循环次数：2
+静态电流值：190.300000
+延时:12秒
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:jac_s4_20190320
+反馈:auto_test
+本次串口通信耗时：1.163000E+0s
+读循环次数：10
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:12345678
+反馈:auto_test$IdType:803a$ValType:01$Value:01
+
+本次串口通信耗时：1.161000E+0s
+读循环次数：10
+WIFI名:jac_s4_20190320
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_20190320
+原文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+新文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+添加配置情况说明输出：
+已将配置文件 jac_s4_20190320 添加到接口 无线网络连接。
+
+WIFI连接情况说明输出：
+jac_s4_20190320已成功完成连接请求。
+
+ping网络结果输出：
+单循环Ping次数：10s
+单循环Ping时间：2.345000ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+
+断开网络连接结果输出：断开WIFI：jac_s4_20190320连接说明：
+
+
+
+
+
+
+已从接口“无线网络连接”中删除配置文件“jac_s4_20190320”。
+WIFI名:jac_s4_20190320
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_20190320
+原文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+新文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+添加配置情况说明输出：
+已将配置文件 jac_s4_20190320 添加到接口 无线网络连接。
+
+WIFI连接情况说明输出：
+jac_s4_20190320已成功完成连接请求。
+
+ping网络结果输出：
+单循环Ping次数：10s
+单循环Ping时间：13.698000ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：
+正在 Ping www.a.shifen.com [183.232.231.172] 具有 32 字节的数据:
+来自 183.232.231.172 的回复: 字节=32 时间=165ms TTL=54
+请求超时。
+来自 192.168.100.42 的回复: 无法访问目标主机。
+请求超时。
+
+183.232.231.172 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 2，丢失 = 2 (50% 丢失)，
+往返行程的估计时间(以毫秒为单位):
+    最短 = 165ms，最长 = 165ms，平均 = 165ms
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+
+断开网络连接结果输出：断开WIFI：jac_s4_20190320连接说明：
+
+
+
+
+
+
+已从接口“无线网络连接”中删除配置文件“jac_s4_20190320”。
+WIFI名:jac_s4_20190320
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_20190320
+原文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+新文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+添加配置情况说明输出：
+已将配置文件 jac_s4_20190320 添加到接口 无线网络连接。
+
+WIFI连接情况说明输出：
+jac_s4_20190320已成功完成连接请求。
+
+ping网络结果输出：
+单循环Ping次数：10s
+单循环Ping时间：2.352000ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+
+断开网络连接结果输出：断开WIFI：jac_s4_20190320连接说明：
+
+
+
+
+
+
+已从接口“无线网络连接”中删除配置文件“jac_s4_20190320”。
+WIFI名:jac_s4_20190320
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_20190320
+原文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+新文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_20190320</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F3230313930333230</hex>
+			<name>jac_s4_20190320</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+添加配置情况说明输出：
+已将配置文件 jac_s4_20190320 添加到接口 无线网络连接。
+
+WIFI连接情况说明输出：
+jac_s4_20190320已成功完成连接请求。
+
+ping网络结果输出：
+单循环Ping次数：1s
+单循环Ping时间：5.101000ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：
+正在 Ping www.a.shifen.com [183.232.231.174] 具有 32 字节的数据:
+来自 183.232.231.174 的回复: 字节=32 时间=68ms TTL=54
+来自 183.232.231.174 的回复: 字节=32 时间=70ms TTL=54
+来自 183.232.231.174 的回复: 字节=32 时间=64ms TTL=54
+来自 183.232.231.174 的回复: 字节=32 时间=69ms TTL=54
+
+183.232.231.174 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 4，丢失 = 0 (0% 丢失)，
+往返行程的估计时间(以毫秒为单位):
+    最短 = 64ms，最长 = 70ms，平均 = 67ms
+
+
+断开网络连接结果输出：断开WIFI：jac_s4_20190320连接说明：
+已成功完成接口“无线网络连接”的断开连接请求。
+
+
+
+
+
+已从接口“无线网络连接”中删除配置文件“jac_s4_20190320”。
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:8002$ValType:01$Value:01
+
+本次串口通信耗时：2.630000E-1s
+读循环次数：1
+退出自动测试进程:成功！
+ACC：置低输出
+延时:15秒
+CAN唤醒工作电流：----CAN帧：120
+发送结果：成功！
+工作电流值：125.000000
+CAN唤醒工作电流：----CAN帧：400
+发送结果：成功！
+工作电流值：6.000000
+CAN唤醒工作电流：----CAN帧：400
+发送结果：成功！
+工作电流值：154.100000
+B+：置低输出
+程控电源设置输出：***通道CH1设置：0V***
+耗时：0.200s

@@ -1,0 +1,117 @@
+2019-1-21 14:01:08
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Stop_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Stop_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-21 13:51:46
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-21 13:49:16
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-21 12:29:25
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-21 12:27:13
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-21 12:25:33
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-21 12:23:00
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-10 17:23:22
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2019-1-10 17:23:08
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-12-20 11:08:12
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-12-19 12:23:49
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-12-19 11:50:37
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-12-19 11:50:23
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi->Init_Action.vi->Main.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+

@@ -1,0 +1,54 @@
+--产品标识:
+--Date and Time:2019-3-2015:49
+--Tester:---Ver1.2.0.69
+
+--测试时间长度:46
+--测试结果:
+
+[测试名称]        	[TestItem]  	[帧ID]        	[数据内容]	[下限值]	[上限值]	[单位]	[间隔时间]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	                                                   																																																																																																																						
+程控电源电压设置  	CMD_Pow     	CH1           	12        	        	        	      	1         	        	Done  	0.412000  	0     	上电      	电源电压递增配置有两个参数：1、启用或禁用;2、递增值																																																																																																																						
+打开电源          	DOAction    	B+            	1         	        	        	      	1         	        	Done  	0.236000  	0     	上电      	                                                   																																																																																																																						
+ACC置高           	DOAction    	ACC           	1         	        	        	      	1         	        	Done  	0.235000  	0     	上电      	                                                   																																																																																																																						
+延时              	Delay       	              	35        	        	        	      	1         	        	Done  	35.007000 	0     	          	                                                   																																																																																																																						
+启动自动化测试进程	StartProcess	100           	5;100     	PASS    	PASS    	String	1         	PASS    	PASS  	4.438000  	1     	通信      	                                                   																																																																																																																						
+启动自动化测试    	CMD_CAJH    	启动自动化测试	4000      	01      	01      	      	1         	01      	PASS  	0.869000  	1     	通信      	                                                   																																																																																																																						
+延时              	Delay       	              	5         	        	        	      	1         	        	Done  	5.009000  	0     	          	                                                   																																																																																																																						
+
+通信信息:程控电源设置输出：***通道CH1设置：12V***
+耗时：0.200s
+B+：置高输出
+ACC：置高输出
+延时:35秒
+启动自动化测试进程：PASS
+COM35: 退出进程
+反馈：killall
+
+COM35
+退出系统：
+反馈：
+
+msm 201901112322 mdm9607 /dev/ttyGS0
+
+
+
+mdm9607 login: 
+COM35
+输入用户名：root
+反馈：root
+Password: 
+COM35
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM35
+启动进程：
+反馈：/vendor/app/auto_test_main
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：8.610000E-1s
+读循环次数：7
+延时:5秒

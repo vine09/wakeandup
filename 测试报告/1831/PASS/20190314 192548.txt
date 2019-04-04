@@ -1,0 +1,80 @@
+--产品标识:
+--Date and Time:2019-3-1419:25
+--Tester:---Ver1.2.0.69
+
+--测试时间长度:56
+--测试结果:
+Pass
+[测试名称]        	[TestItem]    	[帧ID]            	[数据内容]	[下限值]        	[上限值]        	[单位]	[间隔时间]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]	              	                                                   																																																																																																																						
+程控电源电压设置  	CMD_Pow       	CH1               	12        	                	                	      	1         	                	Done  	0.421000  	0     	          	上电          	电源电压递增配置有两个参数：1、启用或禁用;2、递增值																																																																																																																						
+打开电源          	DOAction      	B+                	1         	                	                	      	1         	                	Done  	0.010000  	0     	          	上电          	                                                   																																																																																																																						
+ACC置高           	DOAction      	ACC               	1         	                	                	      	1         	                	Done  	0.011000  	0     	          	上电          	                                                   																																																																																																																						
+延时              	Delay         	                  	35        	                	                	      	1         	                	Done  	35.006000 	0     	          	              	                                                   																																																																																																																						
+启动自动化测试进程	StartProcess  	100               	5;100     	PASS            	PASS            	String	1         	PASS            	PASS  	5.093000  	1     	          	通信          	                                                   																																																																																																																						
+启动自动化测试    	CMD_CAJH      	启动自动化测试    	4000      	01              	01              	      	1         	01              	PASS  	0.775000  	1     	          	通信          	                                                   																																																																																																																						
+延时              	Delay         	                  	5         	                	                	      	1         	                	Done  	5.008000  	0     	          	              	                                                   																																																																																																																						
+查询软件版本      	CMD_CAJH      	查询4G固件版本    	4000      	LLA5201.1.1_M006	LLA5201.1.1_M006	      	1         	LLA5201.1.1_M006	PASS  	0.273000  	0     	          	生产信息      	                                                   																																																																																																																						
+测试工作电流      	Static Current	GDM_8341          	1000      	100             	500             	      	1         	0.00000         	FAIL  	1.953000  	0     	          	休眠或工作电流	                                                   																																																																																																																						
+退出自动化测试    	CMD_CAJH      	退出自动化测试    	4000      	01              	01              	      	1         	01              	PASS  	0.278000  	0     	          	              	                                                   																																																																																																																						
+退出自动化测试进程	QuitProcess   	退出自动化测试进程	100       	PASS            	PASS            	      	1         	PASS            	PASS  	0.373000  	0     	          	              	                                                   																																																																																																																						
+ACC置低           	DOAction      	ACC               	          	                	                	      	1         	                	Done  	0.015000  	0     	          	              	                                                   																																																																																																																						
+延时              	Delay         	                  	5         	                	                	      	1         	                	Done  	5.009000  	0     	          	              	                                                   																																																																																																																						
+测试休眠电流      	Static Current	GDM_8341          	1000      	0.001           	3               	      	1         	0.00000         	FAIL  	1.876000  	0     	          	休眠或工作电流	                                                   																																																																																																																						
+
+通信信息:程控电源设置输出：***通道CH1设置：12V***
+耗时：0.200s
+B+：置高输出
+ACC：置高输出
+延时:35秒
+启动自动化测试进程：PASS
+COM13: 退出进程
+反馈：killall
+
+COM13
+退出系统：
+反馈：
+
+msm 201901112322 mdm9607 /dev/ttyGS0
+
+
+
+mdm9607 login: 
+COM13
+输入用户名：root
+反馈：root
+Password: 
+COM13
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM13
+启动进程：
+反馈：/vendor/app/auto_test_main
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：7.670000E-1s
+读循环次数：6
+延时:5秒
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01LLA5201.1.1_M006
+
+本次串口通信耗时：2.650000E-1s
+读循环次数：1
+静态电流值：0.000000
+静态电流值：0.000000
+静态电流值：0.000000
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:8002$ValType:01$Value:01
+
+本次串口通信耗时：2.690000E-1s
+读循环次数：1
+退出自动测试进程:100成功！
+ACC：置高输出
+延时:5秒
+静态电流值：0.000000
+静态电流值：0.000000
+静态电流值：0.000000
